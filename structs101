@@ -53,13 +53,11 @@ void mediaAltMulheres(PESSOA *vPessoa, int nroMulheres, float *mediaAltFem){
         scanf("%f", &vPessoa[aux].altura);
         getchar();
         printf("Informe o sexo: ");
-        scanf(" %s", vPessoa[aux].sexo);
-        while(strcmp(vPessoa[aux].sexo, "masculino")==0||strcmp(vPessoa[aux].sexo, "feminino")==0){
-            if(strcmp(vPessoa[aux].sexo, "masculino")==0)
-                nroHomens++;
-            if(strcmp(vPessoa[aux].sexo, "feminino")==0)
-                nroMulheres++;
-        }
+        scanf("%s", vPessoa[aux].sexo);
+        if(strcmp(vPessoa[aux].sexo, "masculino")==0)
+        	nroHomens++;
+        if(strcmp(vPessoa[aux].sexo, "feminino")==0)
+        	nroMulheres++;
         if(strcmp(vPessoa[aux].sexo, "masculino")!=0&&strcmp(vPessoa[aux].sexo, "feminino")!=0){
             printf("entrada invalida!");
             exit(1);     
