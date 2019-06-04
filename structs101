@@ -17,8 +17,8 @@ void menAltura(PESSOA *vPessoa, float *menorAlt){
     int aux = 0;
     float tmp = vPessoa[0].altura;
     for(aux=1;aux<10;aux++){
-        if(ptrAltura[aux].altura<tmp)
-            tmp=ptrAltura[aux].altura;
+        if(vPessoa[aux].altura<tmp)
+            tmp=vPessoa[aux].altura;
     }
     *menorAlt = tmp;
 }
